@@ -1,132 +1,710 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Fashion For Only Men </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen" /> <!-- General style -->
+<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" media="screen"><!-- prettyPhoto -->
+<link href="css/tipsy.css" type="text/css" rel="stylesheet" media="screen"><!--tooltip-->
+<link href="css/camera.css" type="text/css" rel="stylesheet" media="screen"><!--camera-->
+<link href="css/jcarousel.css" type="text/css" rel="stylesheet" media="screen" /> <!-- list_work -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js" >
 
-        <title>Laravel duy da sua o day 123123</title>
+</script>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script><!--mediaqueries-->
+<script type="text/javascript" src="js/modernizr-1.7.min.js"></script><!--modernizr-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script><!-- prettyPhoto -->
+<script type="text/javascript" src="js/jquery.tipsy.js"></script><!--tooltip-->
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> <!--camera slider-->
+<script type='text/javascript' src='js/camera.min.js'></script> <!--camera slider-->
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"> </script> <!-- list_work -->
+<script type="text/javascript" src="js/jquery-hover-effect.js"></script><!--Image Hover Effect-->
+<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script><!--menu-->
+<script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script><!--menu-->
+<script type='text/javascript' src="js/jquery.tweet.js"></script><!--twitter plugin-->
+<script type="text/javascript" src="js/jquery.quovolver.js"></script><!--blockquote-->
+<script type="text/javascript" src="js/custom.js"></script><!--custom-->
+<!--MENU-->
+<script type="text/javascript">
+$(document).ready(function($){
+    $('#mega-menu-3').dcMegaMenu({
+        rowItems: '2',
+        speed: 'fast',
+        effect: 'fade'
+    });
+});
+</script>
+<script type="text/javascript" 
+src="http://maps.googleapis.com/maps/api/js?sensor=false&language=vi"></script>
+<script type="text/javascript">
+var map;
+function initialize() {
+      var myLatlng = new google.maps.LatLng(10.843928,106.717672);
+      var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+map = new google.maps.Map(document.getElementById("div_id"), myOptions); 
+  // Biến text chứa nội dung sẽ được hiển thị
+var text;
+text= "<b style='color:#00F' " + 
+         "style='text-align:center'>Nhà của mình nè!<br />" + 
+     "<img src='citihouse-logo.jpg'  /></b>";
+   var infowindow = new google.maps.InfoWindow(
+    { content: text,
+        size: new google.maps.Size(100,50),
+        position: myLatlng
+    });
+       infowindow.open(map);    
+    var marker = new google.maps.Marker({
+      position: myLatlng, 
+      map: map,
+      title:"Fashion shop cool Mate"
+  });
+}
+</script>
+</head>
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+<body>
+    <div id="page_wrap">
+        <header>
+            <div id="top">
+                <span>Fashion Mate  </span>
+                <div>
+                    <p>Languages:
+                    <label>
+                        <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option selected value="index.html">English </option>
+                            <option value="index2.html">Vietnamese</option>
+                            
+                        </select>
+                    </label>​
+                    </p>
+                    <p>Currency:
+                    <label>
+                        <select>
+                            <option selected>US Dollar - USD </option>
+                            <option>Vietnam Đồng- VND</option>
+                        </select>
+                    </label>​
+                    </p>
                 </div>
-            @endif
+            </div><!--end:top-->
+            <div id="top2">
+                <ul class="myaccountmenu">
+                    <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
+                    <li><a href="cart.html">Giỏ hàng</a></li>
+                    <li><a href="checkout.html">Thủ tục thanh toán</a></li>
+                   <li class="login"><a href="#login-box" class="last login-window">Đăng nhập</a></li>
+                </ul>
+                 <div id="login-box" class="login-popup">
+                <a href="#" class="close"><img src="images/process-stop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+                  <form method="post" class="signin" action="#">
+                        <fieldset class="textbox">
+                            @csrf
+                            <div>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+                            <div>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+
+                            <div>
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="col-md-6 offset-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Remember Me') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                                        @auth
+                                        @else
+                                            @if (Route::has('register'))
+                                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                                            @endif
+                                        @endauth
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        </fieldset>
+                        
+                  </form>
                 </div>
+               
+                <div id="demo-header">
+                    <a id="cart-link" href="cart.html" title="Cart">Giỏ hàng của tôi</a>
+                    
+                </div><!-- /demoheader -->  
+            </div><!--end:top2-->
+            <div id="top3">
+                <a href="index.html"><img src="https://www.coolmate.me/images/logo-coolmate.svg" alt="fashion" width="150" height="400" >  </a>
+                <form action="#" method="post" class="search_bar">
+                    <fieldset>
+                      <input type="text" name="search" class="search" value="Enter a keywords..." onBlur="if (this.value == ''){this.value = 'Enter a keywords...'; }" onFocus="if (this.value== 'Enter a keywords...') {this.value = ''; }" />
+                      <input type="submit" name="submit" value="Search" class="submit" />
+                    </fieldset>
+                </form>
+            </div><!--end:top3-->
+        </header>
+        <div id="container">
+            <nav>  
+                <ul id="mega-menu-3" class="mega-menu">
+                    <li class="first"><a href="#" class="current">Trang chủ</a></li>
+                    <li><a href="machangngay.html">Mặc Hàng Ngày</a>
+                        <ul>
+                            <li><a href="machangngay.html"> Outfit of The Season</a>
+                                
+                                <ul>
+                                   <li><a href="phan-mem.html">Quần short Outdoor</a></li>
+                                    <li><a href="phan-mem.html">Quần ống Suông</a></li>
+                                    <li><a href="phan-mem.html">Quần Short Thể Thao</a></li>
+                                    <li><a href="ao-nam.html">Áo Lỡ Tay</a></li>
+                                    <li><a href="ao-nam.html">Áo Sơ Mi</a></li>
+                                    <li><a href="ao-nam.html">Áo Polo Công nghệ</a></li>
+                                </ul>
+                            </li>
+                        
+                        </ul>
+                    </li>
+               
+                <li><a href="linh-kien.html">Phụ kiện</a>
+                    <ul>
+                        <li><a href="#">Đồng Hồ đeo tay</a></li>
+                        <li><a href="linh-kien-chuot.html">Mắt Kính</a></li>
+                        <li><a href="#">Vòng Đeo Tay</a></li>
+                        <li><a href="#">Nước Hoa Bỏ túi</a></li>
+                        <li><a href="#">Ví</a></li>
+                        <li><a href="#">Thắt Lưng</a></li>
+                    </ul>
+                </li>
+                <li><a href="quan-lot-nam.html">Quần lót Nam</a>
+                    <ul>
+                        <li>
+                        <ul>
+                            <li><a href="#">Quần Brief</a></li>
+                            <li><a href="#">Quần Trunk</a></li>
+                            <li><a href="#">Quần Boxer</a></li>
+                        </ul>
+                        
+                        </li>
+                        
+                        </ul>
+                </li>
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
+                 <li><a href="ao-nam.html">áo Nam</a>
+                    <ul>
+                        <li>
+                        <ul>
+                            <li><a href="#">T shirt</a></li>
+                            <li><a href="#">Áo Lỡ Tay </a></li>
+                            <li><a href="#">áo Polo</a></li>
+                            <li><a href="#">áo In Hình  </a></li>
+                            <li><a href="#">áo khoác Thể Thao  </a></li>
+                        </ul>
+                        
+                        </li>
+                        
+                        </ul>
+                </li>
+                 <li><a href="phan-mem.html">quần  Nam</a>
+                    <ul>
+                        <li>
+                        <ul>
+                            <li><a href="#">quần Dài</a></li>
+                            <li><a href="#">Quần Short </a></li>
+                            <li><a href="#">Quần jean</a></li>
+                          
+                        </ul>
+                        
+                        </li>
+                        
+                        </ul>
+                </li>
+              
+                <li><a href="ban-do.html">Liện hệ</a></li>
+                </ul>
+            </nav><!--end:grey-->
+            <div class="content-wrap">
+                <div id="featured">
+                    <div class="camera_wrap camera_emboss " id="camera_wrap_1">
+                    <div  data-src="images/featured/banner.jpg">
+                        <div class="camera_caption moveFromLeft">
+                            <h2>From Korean  </h2>
+                            <p>Perfect Designation. </p>
+                            <div class="button">
+                                <a href="#">Thêm vào giỏ hàng</a>
+                                <a href="#">Kiểm tra</a>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
+                    <div  data-src="images/featured/banner1.jpg">
+                        <div class="camera_caption moveFromLeft">
+                            <h2>Sports for men</h2>
+                            <p>Higher Specs- Lower Price. </p>
+                             <div class="button">
+                                <a href="#">Thêm vào giỏ hàng</a>
+                                <a href="#">Kiểm tra</a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                    <div  data-src="images/featured/banner3.jpg">
+                        <div class="camera_caption moveFromLeft">
+                            <h2>Combo tiết kiệm</h2>
+                            <p>Smooth- Deep Styles. </p>
+                             <div class="button">
+                              <a href="#">Thêm vào giỏ hàng</a>
+                              <a href="#">Kiểm tra</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div  data-src="images/featured/banner2.jpg">
+                        <div class="camera_caption moveFromLeft">
+                            <h2>Combo Công nghệ</h2>
+                            <p>Sharing the Passion. </p>
+                            <div class="button">
+                              <a href="#">Thêm vào giỏ hàng</a>
+                              <a href="#">Kiểm tra</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div><!-- #camera_wrap_1 -->
+                    <div style="clear:both; display:block; height:40px"></div>
+                </div><!--end:featured-->
+                <div id="intro">
+                    <div class="one-fourth serv first">
+                        <img src="images/service-1.png" alt="">
+                        <h3><a href="#">Miễn phí vận chuyển</a></h3>
+                        <span>Luôn có sẵn</span>
+                    </div>
+                    <div class="one-fourth serv">
+                        <img src="images/service-2.png" alt="">
+                        <h3><a href="#">30 ngày hoàn trả</a></h3>
+                        <span>Dễ dàng thay đổi</span>
+                    </div>
+                    <div class="one-fourth serv">
+                        <img src="images/service-3.png" alt="">
+                        <h3><a href="#">Gọi chúng tôi </a></h3>
+                        <span>038 414 6024</span>
+                    </div>
+                    <div class="one-fourth serv">
+                        <img src="images/service-4.png" alt="">
+                        <h3><a href="#">Bảo mật</a></h3>
+                        <span>Thanh toán</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </body>
+                <div class="container-2">
+                    <section class="content">
+                        <div class="list_work">
+                        <h4>Hàng Ngày Mặc gì ? Để Fashion Cool mate Lo</h4>
+                        <ul id="mycarousel" class="jcarousel-skin-tango item da-thumbs">
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/combo03.jpg" alt="" />
+                                <span>Áo thun thể thao nam<br><small class="sale">399.000 VNĐ</small>&nbsp;&nbsp;<small>539.000 VNĐ</small></span>
+                                <span class="sale">Sale</span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Combo 03 Áo thun thể thao nam ProMax-S1</h3>
+                                    <p>
+                                    <a href="chi-tiet-san-pham-combo03.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/dell-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/quan02.jpg" alt="" />
+                                <span>Combo Quần short nam thể thao<br><small>299.000 VNĐ</small></span>
+                                <span class="new">New</span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Combo 02 Quần short nam thể thao ProMax-S1 thoáng khí</h3>
+                                    <p>
+                                    <a href="chi-tiet-san-pham-quan02.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/dell-2.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/tanktop02.jpg" alt="" />
+                                <span>ComBo 03 Áo Tank top thể thao<br><small>299.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Combo 03 Áo Tank top thể thao nam thoáng khí</h3>
+                                    <p>
+                                    <a href="chi-tiet-san-pham-ins15.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/dell-3.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/quanshort03.jpg" alt="" />
+                                <span>Combo 03 Quần short nam thể thao<br><small>299.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Combo 03 Quần short nam thể thao Recycle 5" thoáng khí</h3>
+                                    <p>
+                                    <a href="chitiet-sanpham.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/dell-3.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/aosomi.jpg" alt="" />
+                                <span>Áo Sơ mi nam<br><small>349.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Áo Sơ mi nam Excool Limited ngắn tay chui đầu</h3>
+                                    <p>
+                                    <a href="chitiet-sanpham.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/dell-2.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/aosomi1.jpg" alt="" />
+                                <span>Combo 03 Áo Polo thể thao nam<br><small>499.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Combo 03 Áo Polo thể thao nam ProMax-S1 Logo thoáng khí</h3>
+                                    <p>
+                                    <a href="chitiet-sanpham.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/dell-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>                        
+                            </ul>
+                        </div><!--end:list_work-->
+
+
+                        <div class="list_work">
+                        <h4>Cool mate Active</h4>
+                        <ul id="mycarousel" class="jcarousel-skin-tango item da-thumbs">
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/quan.jpg" alt="" />
+                                <span>Quần short nam thể thao<br><small class="sale">200.000 VNĐ</small>&nbsp;&nbsp;<small>500.000 VNĐ</small></span>
+                                <span class="sale">Sale</span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Quần short nam thể thao 7" co giãn công nghệ Graphene</h3>
+                                    <p>
+                                    <a href="chi-tiet-san-pham-hp-1.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/hp-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/quan1.jpg" alt="" />
+                                <span>Quần Jogger thể thao <br><small>272.000 VNĐ</small></span>
+                                <span class="new">New</span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Quần Jogger thể thao co giãn Graphene</h3>
+                                    <p>
+                                    <a href="chi-tiet-san-pham-hp-2.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/hp-2.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/quan2.jpg" alt="" />
+                                <span>CoolActive Box<br><small>339.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>CoolActive Box - Vận động luôn thoải mái</h3>
+                                    <p>
+                                    <a href="ctsan-pham-hpelite.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/hp-3.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/quan3.jpg" alt="" />
+                                <span>Quần thể thao<br><small>232.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Quần thể thao Jogger co giãn</h3>
+                                    <p>
+                                    <a href="chitiet-sanpham.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/hp-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/ao1.jpg" alt="" />
+                                <span>Áo Tank top thể thao<br><small>144.000 VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Áo Tank top thể thao nam thoáng khí</h3>
+                                    <p>
+                                    <a href="chitiet-sanpham.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/hp-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/ao2.jpg" alt="" />
+                                <span>Áo Polo thể thao nam<br><small>192.000VNĐ</small></span>
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h3>Áo Polo thể thao nam ProMax-S1 Logo thoáng khí</h3>
+                                    <p>
+                                    <a href="chitiet-sanpham.html" class="link tip" title="Detail"></a>&nbsp;
+                                    <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
+                                    <a href="images/preview/hp-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
+                                </article>
+                            </li>                        
+                            </ul>
+                        </div><!--end:list_work-->
+
+
+
+                        <div class="list_work list_work2">
+                        <h4>Phụ Kiện</h4>
+                        <ul id="mycarouselnew" class="jcarousel-skin-tango item">
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/phukien.jpg" alt=" " width="100" height="100">
+                                
+                                <span>Mũ lưỡi trai nam thoáng khí phối lưới Baseball <CAPTION></CAPTION> <br><small class="sale">149.000đ</small>&nbsp;&nbsp;<small>300.000 VNĐ</small></span>
+                                <span class="sale">Sale</span>
+                                <ul>
+                                    <li><a href="#" class="cart tip" title="Add to Cart">Add to Cart</a></li>
+                                    <li><a href="images/preview/samsung-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Phong to</a></li>
+                                    <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                 <img src="images/products/phukien1.jpg" alt=" " width="120" height="100">
+                                <span>Mũ/Nón lưỡi traiK<br><small>199.000 VNĐ</small></span>
+                                <ul>
+                                    <li><a href="#" class="cart tip" title="Add to Cart">Add to Cart</a></li>
+                                    <li><a href="images/preview/samsung-2.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
+                                   <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                               <img src="images/products/phukien2.jpg" alt=" " width="120" height="100">
+                                <span>Mũ/Nón lưỡi trai nam Tech Cap<br><small>199.000 VNĐ</small></span>
+                                <ul>
+                                    <li><a href="#" class="cart tip" title="Add to Cart">Add to Cart</a></li>
+                                    <li><a href="images/preview/samsung-3.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
+                                    <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/phukien3.jpg" alt=" " width="120" height="100">
+                                <span>Combo 3 đôi tất cổ dài Cotton Solid Casual<br><small>119.000 VNĐ</small></span>
+                                <ul>
+                                    <li><a href="#" class="cart tip" title="Add to Cart">Add to Cart</a></li>
+                                    <li><a href="images/preview/samsung-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
+                                   <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                                <img src="images/products/phukien4.jpg" alt=" " width="120" height="100">
+                                <span>Outlet - Combo 3 khẩu trang trẻ em công nghệ HeiQ Viroblock <br><small>44.000 VNĐ</small></span>
+                                <ul>
+                                    <li><a href="#" class="cart tip" title="Add to Cart">Add to Cart</a></li>
+                                    <li><a href="images/preview/samsung-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
+                                    <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li style="border: solid lightgray 1px;">
+                               <img src="images/products/phukien5.jpg" alt=" " width="120" height="100">
+                                <span>Túi Coolmate Clean Bag in chữ Eco - Friendly<br><small>59.000 VNĐ</small></span>
+                                <ul>
+                                    <li><a href="#" class="cart tip" title="Add to Cart">Add to Cart</a></li>
+                                    <li><a href="images/preview/samsung-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
+                                    <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
+                                </ul>
+                            </li>                        
+                            </ul>
+                        </div><!--end:list_work-->
+                    </section>
+                    <aside class="sidebar">
+                        <div class="side">
+                            <h4>Bán chạy nhất</h4>
+                            <div class="entry">
+                                <div class="da-thumbs">
+                                    <div>
+                                        <img src="images/linhkien/box.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="linhkien-ram.html" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="linhkien-ram.html">OUTLET - Combo 03 Quần lót nam Brief Boxer Modal (gỗ sồi) mềm mại </a></h3>
+                                <small>199.000 VNĐ</small>
+                            </div>
+                            <div class="entry">
+                                <div class="da-thumbs">
+                                    <div>
+                                        <img src="images/linhkien/box1.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="chi-tiet-san-pham-Dell3560" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="chi-tiet-san-pham-Dell3560">Combo 03 quần lót nam trunk Cotton Compact siêu mát S2</a></h3>
+                                <small>289.000 VNĐ</small>
+                            </div>
+                        </div><!--end:side-->
+                        <div class="side">
+                            <h4>Ads</h4>
+                            <div class="entry">
+                                <div class="da-thumbs">
+                                    <div>
+                                        <img src="images/linhkien/box2.jpg" alt="">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="#" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="blog.html">03 quần lót nam Brief Boxer Bamboo kháng khuẩn</a></h3>
+                                <small>299.000 VNĐ</small>
+                                
+                            </div>
+                            <div class="entry">
+                                <div class="da-thumbs">
+                                    <div>
+                                        <img src="images/linhkien/box3.jpg" alt="">    
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <p><a href="#" class="link"></a></p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <h3><a href="blog.html">03 quần lót nam Brief Boxer Bamboo kháng khuẩn</a></h3>
+                                 <small>299.000 VNĐ</small>
+                               
+                            </div>
+                        </div><!--end:side-->
+                        <div class="side">
+                            <h4>Maps</h4>
+                                <div>
+                                         <p><a href="ban-do.html" class="link"> <img src="images/map.jpg" alt=""></a></p>
+                                       
+                                    </div>
+                        </div>
+                    </aside>
+                </div><!--end:container-2-->
+                <div class="container-2">
+                    <div style="clear:both; display:block; height:40px"></div>
+                    <div class="content-wrap">
+                        <h4>Về chúng tôi!</h4>
+                         <p>Trong môi trường kinh tế và công nghệ phát triển không ngừng, thị trường bán lẻ sản phẩm quần áo cho nam ngày càng phát triển nhanh chóng về quy mô. Cùng với xu thế thị trường mở rộng không chỉ  với nhiều ưu điểm về giá<a href="#"> Đọc thêm...</a></p> 
+                        
+                    </div>
+                    <div class="one-third">
+                        <div class='tweet query'></div>
+                    </div>
+                    <div class="one-third">
+                        <div class="fb-like-box" data-href="http://www.facebook.com/HTML5Awesome" data-width="280" data-show-faces="true" data-stream="false" data-border-color="#e5e5e5" data-header="false"></div>
+                    </div>
+                </div><!--end:container-2-->
+                
+            </div><!--end:content-wrap-->
+            <footer>
+                <div class="content-wrap">
+                    <div class="one-fourth first">
+                        <h4>Thông tin</h4>
+                        <ul>
+                            <li><a href="/about.html">Về chúng tôi</a></li>
+                            <li><a href="#">Thông tin giao hàng</a></li>
+                            <li><a href="#">Chính sách chất lượng</a></li>
+                            <li><a href="#">Điều kiện</a></li>
+                        </ul>
+                    </div>
+                    <div class="one-fourth">
+                        <h4>Bản đồ trang web</h4>
+                        <ul>
+                            <li><a href="sitemap.html">Sơ đồ trang web</a></li>
+                            
+                        </ul>
+                    </div>
+                                      
+                    <div class="one-fourth">
+                        <h4>Tài Khoản</h4>
+                        <ul>
+                            <li><a href="#">Tài khoản của tôi</a></li>
+                            <li><a href="#">Lịch sử</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div style="clear:both; display:block;" class="social-wrap"></div>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/laptopbaominh" class="tip" title="Facebook"><img src="images/social-icon-facebook.png" alt="Facebook"></a></li>
+                        
+                    </ul>
+                    <ul class="payment">
+                        <li><a href="https://www.paypal.com/vn/home" class="tip" title="Paypal"><img src="images/payment-icon-paypal.png" alt="Paypal"></a></li>
+                        <li><a href="https://www.mastercard.com.vn/vi-vn.html" class="tip" title="Master Card"><img src="images/payment-icon-mastercard.png" alt="Master Card"></a></li>
+                        <li><a href="https://www.visa.com.vn/" class="tip" title="Visa"><img src="images/payment-icon-visa.png" alt="Visa"></a></li>
+                    </ul>
+                    <p style="clear:both; display:block;">&copy; 2022 <a href="index.html">Fashion Cool Mate</a>, Designed by: <a href="#">Trịnh Ngọc Sơn PBIT1702</a></p>
+                </div>
+            </footer>
+        </div><!--end:container-->
+    </div><!--end:page_wrap-->
+   
+<script type="text/javascript">
+//------JCAROUSEL-------------
+        function mycarousel_initCallback(carousel){
+        // Disable autoscrolling if the user clicks the prev or next button.
+        carousel.buttonNext.bind('click', function() {
+            carousel.startAuto(0);
+        });
+        carousel.buttonPrev.bind('click', function() {
+            carousel.startAuto(0);
+        });
+        // Pause autoscrolling if the user moves with the cursor over the clip.
+        carousel.clip.hover(function() {
+            carousel.stopAuto();
+        }, function() {
+            carousel.startAuto();
+        });
+    };
+    jQuery(document).ready(function() {
+        jQuery('#mycarousel, #mycarouselnew').jcarousel({
+            auto: 0,
+            wrap: 'last',
+            initCallback: mycarousel_initCallback
+        });
+        
+    }); 
+</script>    
+
+</body>
 </html>
