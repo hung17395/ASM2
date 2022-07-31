@@ -102,79 +102,44 @@ text= "<b style='color:#00F' " +
                     <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
                     <li><a href="cart.html">Giỏ hàng</a></li>
                     <li><a href="checkout.html">Thủ tục thanh toán</a></li>
-                   <li class="login"><a href="#login-box" class="last login-window">Đăng nhập</a></li>
                 </ul>
-                 <div id="login-box" class="login-popup">
-                <a href="#" class="close"><img src="images/process-stop.png" class="btn_close" title="Close Window" alt="Close" /></a>
-                  <form method="post" class="signin" action="#">
-                        <fieldset class="textbox">
-                            @csrf
-                            <div>
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                <div>
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
 
-                            <div>
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div>
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
                                     </a>
-                                    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                                        @auth
-                                        @else
-                                            @if (Route::has('register'))
-                                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                                            @endif
-                                        @endauth
-                                    </div>
-                                @endif
-                            </div>
-                        </div>
-                        
-                        </fieldset>
-                        
-                  </form>
-                </div>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+
+                    </div>
+                 
                
                 <div id="demo-header">
                     <a id="cart-link" href="cart.html" title="Cart">Giỏ hàng của tôi</a>
@@ -193,52 +158,8 @@ text= "<b style='color:#00F' " +
         </header>
         <div id="container">
             @yield('content')
+            
             <div class="content-wrap">
-                <div id="featured">
-                    <div class="camera_wrap camera_emboss " id="camera_wrap_1">
-                    <div  data-src="images/featured/banner.jpg">
-                        <div class="camera_caption moveFromLeft">
-                            <h2>From Korean  </h2>
-                            <p>Perfect Designation. </p>
-                            <div class="button">
-                                <a href="#">Thêm vào giỏ hàng</a>
-                                <a href="#">Kiểm tra</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div  data-src="images/featured/banner1.jpg">
-                        <div class="camera_caption moveFromLeft">
-                            <h2>Sports for men</h2>
-                            <p>Higher Specs- Lower Price. </p>
-                             <div class="button">
-                                <a href="#">Thêm vào giỏ hàng</a>
-                                <a href="#">Kiểm tra</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div  data-src="images/featured/banner3.jpg">
-                        <div class="camera_caption moveFromLeft">
-                            <h2>Combo tiết kiệm</h2>
-                            <p>Smooth- Deep Styles. </p>
-                             <div class="button">
-                              <a href="#">Thêm vào giỏ hàng</a>
-                              <a href="#">Kiểm tra</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div  data-src="images/featured/banner2.jpg">
-                        <div class="camera_caption moveFromLeft">
-                            <h2>Combo Công nghệ</h2>
-                            <p>Sharing the Passion. </p>
-                            <div class="button">
-                              <a href="#">Thêm vào giỏ hàng</a>
-                              <a href="#">Kiểm tra</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div><!-- #camera_wrap_1 -->
-                    <div style="clear:both; display:block; height:40px"></div>
-                </div><!--end:featured-->
                 <div id="intro">
                     <div class="one-fourth serv first">
                         <img src="images/service-1.png" alt="">
