@@ -192,6 +192,7 @@ text= "<b style='color:#00F' " +
             </div><!--end:top3-->
         </header>
         <div id="container">
+            @yield('content')
             <nav>  
                 <ul id="mega-menu-3" class="mega-menu">
                     <li class="first"><a href="#" class="current">Trang chủ</a></li>
