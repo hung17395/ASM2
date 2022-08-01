@@ -26,3 +26,11 @@ Auth::routes();
 Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 Route::get('/test', [App\Http\Controllers\testcontroller::class, 'index'])->name('testlayout');
+
+Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
+
+
+
+
+
+?>
