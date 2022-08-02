@@ -27,14 +27,11 @@ Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::get('/test', [App\Http\Controllers\testcontroller::class, 'index'])->name('testlayout');
 
-<<<<<<< HEAD
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
-=======
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
 
-
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('About/About');
 
 
 
 ?>
->>>>>>> 68e1fa2dba33afaa8d1c1e721081d59c4e90eab5

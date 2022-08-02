@@ -2,14 +2,13 @@
 
 @section('content')
 <div id="container">
-<<<<<<< HEAD
-<nav>  
+<nav>
     <ul id="mega-menu-3" class="mega-menu">
         <li class="first"><a href="#" class="current">Trang chủ</a></li>
         <li><a href="machangngay.html">Mặc Hàng Ngày</a>
             <ul>
                 <li><a href="machangngay.html"> Outfit of The Season</a>
-                    
+
                     <ul>
                        <li><a href="phan-mem.html">Quần short Outdoor</a></li>
                         <li><a href="phan-mem.html">Quần ống Suông</a></li>
@@ -19,10 +18,10 @@
                         <li><a href="ao-nam.html">Áo Polo Công nghệ</a></li>
                     </ul>
                 </li>
-            
+
             </ul>
         </li>
-   
+
     <li><a href="linh-kien.html">Phụ kiện</a>
         <ul>
             <li><a href="#">Đồng Hồ đeo tay</a></li>
@@ -41,9 +40,9 @@
                 <li><a href="#">Quần Trunk</a></li>
                 <li><a href="#">Quần Boxer</a></li>
             </ul>
-            
+
             </li>
-            
+
             </ul>
     </li>
 
@@ -57,9 +56,9 @@
                 <li><a href="#">áo In Hình  </a></li>
                 <li><a href="#">áo khoác Thể Thao  </a></li>
             </ul>
-            
+
             </li>
-            
+
             </ul>
     </li>
      <li><a href="phan-mem.html">quần  Nam</a>
@@ -69,14 +68,14 @@
                 <li><a href="#">quần Dài</a></li>
                 <li><a href="#">Quần Short </a></li>
                 <li><a href="#">Quần jean</a></li>
-              
+
             </ul>
-            
+
             </li>
-            
+
             </ul>
     </li>
-  
+
     <li><a href="ban-do.html">Liện hệ</a></li>
     </ul>
 </nav><!--end:grey-->
@@ -220,7 +219,7 @@
                         <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
                         <a href="images/preview/dell-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
                     </article>
-                </li>                        
+                </li>
                 </ul>
             </div><!--end:list_work-->
 
@@ -295,7 +294,7 @@
                         <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
                         <a href="images/preview/hp-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
                     </article>
-                </li>                        
+                </li>
                 </ul>
             </div><!--end:list_work-->
 
@@ -306,7 +305,7 @@
             <ul id="mycarouselnew" class="jcarousel-skin-tango item">
                 <li style="border: solid lightgray 1px;">
                     <img src="images/products/phukien.jpg" alt=" " width="100" height="100">
-                    
+
                     <span>Mũ lưỡi trai nam thoáng khí phối lưới Baseball <CAPTION></CAPTION> <br><small class="sale">149.000đ</small>&nbsp;&nbsp;<small>300.000 VNĐ</small></span>
                     <span class="sale">Sale</span>
                     <ul>
@@ -359,7 +358,7 @@
                         <li><a href="images/preview/samsung-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
                         <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
                     </ul>
-                </li>                        
+                </li>
                 </ul>
             </div><!--end:list_work-->
         </section>
@@ -404,12 +403,12 @@
                     </div>
                     <h3><a href="blog.html">03 quần lót nam Brief Boxer Bamboo kháng khuẩn</a></h3>
                     <small>299.000 VNĐ</small>
-                    
+
                 </div>
                 <div class="entry">
                     <div class="da-thumbs">
                         <div>
-                            <img src="images/linhkien/box3.jpg" alt="">    
+                            <img src="images/linhkien/box3.jpg" alt="">
                             <article class="da-animate da-slideFromRight" style="display: block;">
                                 <p><a href="#" class="link"></a></p>
                             </article>
@@ -417,25 +416,24 @@
                     </div>
                     <h3><a href="blog.html">03 quần lót nam Brief Boxer Bamboo kháng khuẩn</a></h3>
                      <small>299.000 VNĐ</small>
-                   
+
                 </div>
             </div><!--end:side-->
             <div class="side">
                 <h4>Maps</h4>
                     <div>
                              <p><a href="ban-do.html" class="link"> <img src="images/map.jpg" alt=""></a></p>
-                           
+
                         </div>
             </div>
         </aside>
-=======
-            <nav>  
+            <nav>
                 <ul id="mega-menu-3" class="mega-menu">
                     <li class="first"><a href="#" class="current">Trang chủ</a></li>
                     <li><a href="machangngay.html">Mặc Hàng Ngày</a>
                         <ul>
                             <li><a href="machangngay.html"> Outfit of The Season</a>
-                                
+
                                 <ul>
                                    <li><a href="phan-mem.html">Quần short Outdoor</a></li>
                                     <li><a href="phan-mem.html">Quần ống Suông</a></li>
@@ -445,10 +443,10 @@
                                     <li><a href="ao-nam.html">Áo Polo Công nghệ</a></li>
                                 </ul>
                             </li>
-                        
+
                         </ul>
                     </li>
-               
+
                 <li><a href="linh-kien.html">Phụ kiện</a>
                     <ul>
                         <li><a href="#">Đồng Hồ đeo tay</a></li>
@@ -467,9 +465,9 @@
                             <li><a href="#">Quần Trunk</a></li>
                             <li><a href="#">Quần Boxer</a></li>
                         </ul>
-                        
+
                         </li>
-                        
+
                         </ul>
                 </li>
 
@@ -483,9 +481,9 @@
                             <li><a href="#">áo In Hình  </a></li>
                             <li><a href="#">áo khoác Thể Thao  </a></li>
                         </ul>
-                        
+
                         </li>
-                        
+
                         </ul>
                 </li>
                  <li><a href="phan-mem.html">quần  Nam</a>
@@ -495,14 +493,14 @@
                             <li><a href="#">quần Dài</a></li>
                             <li><a href="#">Quần Short </a></li>
                             <li><a href="#">Quần jean</a></li>
-                          
+
                         </ul>
-                        
+
                         </li>
-                        
+
                         </ul>
                 </li>
-              
+
                 <li><a href="ban-do.html">Liện hệ</a></li>
                 </ul>
             </nav><!--end:grey-->
@@ -625,7 +623,7 @@
                                     <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
                                     <a href="images/preview/quan2.jpg" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
                                 </article>
-                            </li>                        
+                            </li>
                             </ul>
                         </div><!--end:list_work-->
 
@@ -700,7 +698,7 @@
                                     <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
                                     <a href="images/preview/hp-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
                                 </article>
-                            </li>                        
+                            </li>
                             </ul>
                         </div><!--end:list_work-->
 
@@ -711,7 +709,7 @@
                         <ul id="mycarouselnew" class="jcarousel-skin-tango item">
                             <li style="border: solid lightgray 1px;">
                                 <img src="images/products/phukien.jpg" alt=" " width="100" height="100">
-                                
+
                                 <span>Mũ lưỡi trai nam thoáng khí phối lưới Baseball <CAPTION></CAPTION> <br><small class="sale">149.000đ</small>&nbsp;&nbsp;<small>300.000 VNĐ</small></span>
                                 <span class="sale">Sale</span>
                                 <ul>
@@ -764,7 +762,7 @@
                                     <li><a href="images/preview/samsung-1.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom">Zoom In</a></li>
                                     <li><a href="#" class="compare tip" title="Compare">Compare</a></li>
                                 </ul>
-                            </li>                        
+                            </li>
                             </ul>
                         </div><!--end:list_work-->
                     </section>
@@ -809,12 +807,12 @@
                                 </div>
                                 <h3><a href="blog.html">03 quần lót nam Brief Boxer Bamboo kháng khuẩn</a></h3>
                                 <small>299.000 VNĐ</small>
-                                
+
                             </div>
                             <div class="entry">
                                 <div class="da-thumbs">
                                     <div>
-                                        <img src="images/linhkien/box3.jpg" alt="">    
+                                        <img src="images/linhkien/box3.jpg" alt="">
                                         <article class="da-animate da-slideFromRight" style="display: block;">
                                             <p><a href="#" class="link"></a></p>
                                         </article>
@@ -822,17 +820,16 @@
                                 </div>
                                 <h3><a href="blog.html">03 quần lót nam Brief Boxer Bamboo kháng khuẩn</a></h3>
                                  <small>299.000 VNĐ</small>
-                               
+
                             </div>
                         </div><!--end:side-->
                         <div class="side">
                             <h4>Maps</h4>
                                 <div>
                                          <p><a href="ban-do.html" class="link"> <img src="images/map.jpg" alt=""></a></p>
-                                       
+
                                     </div>
                         </div>
                     </aside>
                 </div><!--end:container-2-->
->>>>>>> 68e1fa2dba33afaa8d1c1e721081d59c4e90eab5
 @endsection
