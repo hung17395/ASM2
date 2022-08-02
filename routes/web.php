@@ -27,7 +27,11 @@ Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::get('/test', [App\Http\Controllers\testcontroller::class, 'index'])->name('testlayout');
 
+/*lienhe*/
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
+
+/*cart */
+Route::get('/cart', [App\Http\Controllers\FEController::class, 'cart'])->name('cart');
 
 
 

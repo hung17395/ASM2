@@ -76,8 +76,8 @@
                         </ul>
                 </li>
               
-                <li><a href="ban-do.html">Liện hệ</a></li>
-                </ul>
+                <li><a href="lienhe">Liện hệ</a></li>
+                </ul>   
             </nav><!--end:grey-->
             <div class="content-wrap">
                 <div id="featured">

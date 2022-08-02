@@ -25,4 +25,11 @@ class HomeController extends Controller
     {
         return view('index');
     }
+
+    public function lienhe()
+    {
+        return view('lienhe');
+    }
+
+    
 }
