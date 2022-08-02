@@ -14,5 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Auth::routes();
+
+Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+
+Auth::routes();
+
+Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+
+//Produtc
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
+Route::get('/add-product', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
+
+//FE
+
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('About/About');
+/*lienhe*/
+
+Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
+
+/*cart */
+Route::get('/cart', [App\Http\Controllers\FEController::class, 'cart'])->name('cart');
+
+
