@@ -27,13 +27,10 @@ Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::get('/test', [App\Http\Controllers\testcontroller::class, 'index'])->name('testlayout');
 
-<<<<<<< HEAD
-/*lienhe*/
-=======
-<<<<<<< HEAD
+
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
-=======
->>>>>>> 8a84ab69f9d25b9cd9ade468a535827bfd2a1833
+
+
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
 
 /*cart */
@@ -43,5 +40,9 @@ Route::get('/cart', [App\Http\Controllers\FEController::class, 'cart'])->name('c
 
 
 
+
+
+
+
 ?>
->>>>>>> 68e1fa2dba33afaa8d1c1e721081d59c4e90eab5
+
