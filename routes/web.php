@@ -28,21 +28,15 @@ Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->nam
 Route::get('/test', [App\Http\Controllers\testcontroller::class, 'index'])->name('testlayout');
 
 
+
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
 
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('About/About');
+/*lienhe*/
 
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
 
 /*cart */
 Route::get('/cart', [App\Http\Controllers\FEController::class, 'cart'])->name('cart');
 
-
-
-
-
-
-
-
-
-?>
 
