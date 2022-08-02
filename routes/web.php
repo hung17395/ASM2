@@ -25,32 +25,18 @@ Auth::routes();
 
 Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
-Route::get('/test', [App\Http\Controllers\testcontroller::class, 'index'])->name('testlayout');
-
-<<<<<<< HEAD
 //Produtc
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
-
 Route::get('/add-product', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
 
-
 //FE
-=======
-
-
-Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
 
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('About/About');
 /*lienhe*/
 
->>>>>>> refs/remotes/origin/main
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
 
 /*cart */
 Route::get('/cart', [App\Http\Controllers\FEController::class, 'cart'])->name('cart');
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/main
