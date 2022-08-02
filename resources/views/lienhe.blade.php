@@ -70,14 +70,14 @@ $(document).ready(function($){
 <div id="container">
             <nav>  
                 <ul id="mega-menu-3" class="mega-menu">
-                    <li class="first"><a href="index.html" class="current">Trang chủ</a></li>
+                    <li class="first"><a href="index" class="current">Trang chủ</a></li>
                     <li><a href="laptop-re.html">Mặc Hàng Ngày</a>
                         <ul>
                             <li><a href="laptop-re.html"> Outfit of The Season</a>
                                 
                                 <ul>
-                                    <li><a href="linh-kien-dell.html">Quần short Outdoor</a></li>
-                                    <li><a href="linh-kien-hp.html">Quần ống Suông</a></li>
+                                    <li><a href="phan-mem.html">Quần short Outdoor</a></li>
+                                    <li><a href="phan-mem.html">Quần ống Suông</a></li>
                                     <li><a href="#">Quần Short Thể Thao</a></li>
                                     <li><a href="#">Áo Lỡ Tay</a></li>
                                     <li><a href="#">Áo Sơ Mi</a></li>

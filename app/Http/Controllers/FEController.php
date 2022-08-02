@@ -11,5 +11,10 @@ class FEController extends Controller
         return view('lienhe');
     }
 
+    public function cart()
+    {
+        return view('cart');
+    }
+
 
 }

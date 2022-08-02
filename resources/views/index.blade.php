@@ -500,9 +500,15 @@
 
                         </ul>
                 </li>
+<<<<<<< HEAD
 
                 <li><a href="ban-do.html">Liện hệ</a></li>
                 </ul>
+=======
+              
+                <li><a href="lienhe">Liện hệ</a></li>
+                </ul>   
+>>>>>>> 975ecf060875704639ea9fda4a985d2c5b788fd8
             </nav><!--end:grey-->
             <div class="content-wrap">
                 <div id="featured">
