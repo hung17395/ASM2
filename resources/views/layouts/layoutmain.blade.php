@@ -11,7 +11,9 @@
 <link rel="stylesheet" href="{{ asset('/css/jcarousel.css ') }}" type="text/css" rel="stylesheet" media="screen"/> <!-- list_work -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js') }}"> -->
-<script type="text/javascript" src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
+    <link href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css') }}" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js')}}" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('http://code.google.com/apis/gears/gears_init.js')}}" >
 
 </script>
@@ -102,11 +104,7 @@ text= "<b style='color:#00F' " +
                     <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
                     <li><a href="cart.html">Giỏ hàng</a></li>
                     <li><a href="checkout.html">Thủ tục thanh toán</a></li>
-                </ul>
-                <div>
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
+                    @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -114,12 +112,12 @@ text= "<b style='color:#00F' " +
                             @endif
 
                             @if (Route::has('register'))
-                                <li class="nav-item">
+                                <li>
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li>
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
@@ -137,10 +135,8 @@ text= "<b style='color:#00F' " +
                                 </div>
                             </li>
                         @endguest
-
-                    </div>
-                 
-               
+                    </ul>
+                </ul>
                 <div id="demo-header">
                     <a id="cart-link" href="cart.html" title="Cart">Giỏ hàng của tôi</a>
                     
