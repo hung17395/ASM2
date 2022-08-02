@@ -2,13 +2,14 @@
 
 @section('content')
 <div id="container">
-<<<<<<< HEAD
 <nav>  
     <ul id="mega-menu-3" class="mega-menu">
         <li class="first"><a href="#" class="current">Trang chủ</a></li>
         <li><a href="machangngay.html">Mặc Hàng Ngày</a>
             <ul>
                 <li><a href="machangngay.html"> Outfit of The Season</a>
+                    
+
                     
                     <ul>
                        <li><a href="phan-mem.html">Quần short Outdoor</a></li>
@@ -428,7 +429,6 @@
                         </div>
             </div>
         </aside>
-=======
             <nav>  
                 <ul id="mega-menu-3" class="mega-menu">
                     <li class="first"><a href="#" class="current">Trang chủ</a></li>
@@ -834,5 +834,4 @@
                         </div>
                     </aside>
                 </div><!--end:container-2-->
->>>>>>> 68e1fa2dba33afaa8d1c1e721081d59c4e90eab5
 @endsection

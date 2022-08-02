@@ -2,7 +2,9 @@
 
 @section('content')
     <div>
-                    <p>Product </p>                
+
+                    <p>Product </p>
+                    <button class="btn btn-info float-right md-4" ><a href="{{ url('/add-product') }}">Add Product</a></button>                
                     <table class="table">
                       <thead>
                         <tr>
