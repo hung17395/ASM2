@@ -31,5 +31,10 @@ class HomeController extends Controller
         return view('lienhe');
     }
 
+    public function home()
+    {
+        return view('index');
+    }
+
     
 }

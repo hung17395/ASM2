@@ -484,8 +484,6 @@
         </aside>                   
 
 
-@endsection
-
 
 
                         <div class="list_work list_work2">

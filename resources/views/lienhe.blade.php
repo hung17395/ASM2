@@ -1,3 +1,4 @@
+
 @extends('layouts.layoutmain')
 
 @section('content')
@@ -157,7 +158,4 @@
             </footer>
         </div><!--end:container-->
     </div><!--end:page_wrap-->
-
-</body>
-</html>
 @endsection
