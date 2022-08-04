@@ -2,11 +2,6 @@
 
 @section('content')
 <div id="container">
-<<<<<<< HEAD
-=======
-
-
->>>>>>> refs/remotes/origin/main
 <nav>  
 
 <nav>
@@ -16,13 +11,9 @@
         <li><a href="machangngay.html">Mặc Hàng Ngày</a>
             <ul>
                 <li><a href="machangngay.html"> Outfit of The Season</a>
-<<<<<<< HEAD
                     
 
                     
-=======
-
->>>>>>> refs/remotes/origin/main
                     <ul>
                        <li><a href="phan-mem.html">Quần short Outdoor</a></li>
                         <li><a href="phan-mem.html">Quần ống Suông</a></li>
@@ -445,7 +436,6 @@
 
                         </div>
             </div>
-<<<<<<< HEAD
         </aside>
             <nav>  
                 <ul id="mega-menu-3" class="mega-menu">
@@ -490,15 +480,12 @@
                         
                         </ul>
                 </li>
-=======
->>>>>>> refs/remotes/origin/main
 
         </aside>                   
 
 
 @endsection
 
-<<<<<<< HEAD
 
 
                         <div class="list_work list_work2">
@@ -630,5 +617,3 @@
                     </aside>
                 </div><!--end:container-2-->
 @endsection
-=======
->>>>>>> refs/remotes/origin/main
