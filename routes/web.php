@@ -21,21 +21,21 @@ Auth::routes();
 Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 Auth::routes();
 Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'home'])->name('index');
+// Route::get('/admin', [App\Http\Controllers\HomeController::class, 'home'])->name('index');
 
-//Produtc
+//Product
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
-
-Route::get('/add-product', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
+Route::get('/create-product', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
+Route::get('/add-product', [App\Http\Controllers\ProductController::class, 'store']);
 
 //FE
-
-Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('About/About');
-/*lienhe*/
-
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
+
+//About
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('About/About');
 
 /*cart */
 Route::get('/cart', [App\Http\Controllers\FEController::class, 'cart'])->name('cart');
 
-
+//Admin
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admin'])->name('Admin/adminMain');

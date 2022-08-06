@@ -12,11 +12,18 @@ class ProductController extends Controller
     public function index(){
         $arr['products'] = Product::with('Category')->get();
         return view ('Products/Product')->with($arr);
-        // return view ('Products/Product');
+        
     }
     public function create()
     {
         $asser['Categories'] = Category::all();
         return view('Products/Create')->with($asser);
     }
+    public function store(Request $request){
+        $input = $request->all();
+        Product::create($input);
+        // return redirect('/');
+        return view ('/add-product');
+    }
+
 }

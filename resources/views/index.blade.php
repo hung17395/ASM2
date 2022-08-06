@@ -433,7 +433,6 @@
                 <h4>Maps</h4>
                     <div>
                              <p><a href="ban-do.html" class="link"> <img src="images/map.jpg" alt=""></a></p>
-
                         </div>
             </div>
         </aside>
@@ -474,18 +473,11 @@
                             <li><a href="#">Quần Brief</a></li>
                             <li><a href="#">Quần Trunk</a></li>
                             <li><a href="#">Quần Boxer</a></li>
+                        </ul>                   
+                        </li>     
                         </ul>
-                        
-                        </li>
-                        
-                        </ul>
-                </li>
-
+                    </li>
         </aside>                   
-
-
-
-
                         <div class="list_work list_work2">
                         <h4>Phụ Kiện</h4>
                         <ul id="mycarouselnew" class="jcarousel-skin-tango item">
