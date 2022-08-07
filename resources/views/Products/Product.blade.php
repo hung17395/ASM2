@@ -26,11 +26,8 @@
                 <th>
                   Category
                 </th>
-                <th>
-                  Edit
-                </th>
                 <th class="text-right">
-                  Delete
+                  Option
                 </th>
               </thead>
               <tbody>
@@ -41,8 +38,11 @@
                           <td>link img</td>
                           <td>{{ $product->price }}</td>
                           <td>{{ $product->Category->name}}</td>
-                          <td>Edit</td>
-                          <td class="text-right">Delete</td>
+                          <td class="text-right">
+                            {{-- <a href="{{asset('/create')}}" class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span> Add</a>
+                            <a href="{{asset('editCategory/'.$value->id)}}" class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span> Edit</a>
+                            <a href="{{asset('/category/delete/'.$value->id)}}" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span>Delete</a> --}}
+                          </td>
                         </tr>
                         @endforeach
               </tbody>

@@ -33,19 +33,19 @@
     </div>
     <div class="sidebar-wrapper" id="sidebar-wrapper">
       <ul class="nav">
-        <li class="active ">
-          <a href="./dashboard.html">
+        <li class="active">
+          <a href="{{ asset('/admin') }}">
             <i class="now-ui-icons design_app"></i>
             <p>Dashboard Admin</p>
           </a> 
         <li>
-          <a href="./tables.html">
+          <a href="{{ asset('/userList') }}">
             <i class="now-ui-icons users_single-02 design_bullet-list-67"></i>
             <p>User List</p>
           </a>
         </li>
         <li>
-          <a href="./tables.html">
+          <a href="{{ asset('/category') }}">
             <i class="now-ui-icons design_bullet-list-67"></i>
             <p>Category List</p>
           </a>
