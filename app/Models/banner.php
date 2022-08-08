@@ -1,5 +1,4 @@
 <?php
-<?php
 
 namespace App\Models;
 
@@ -16,4 +15,3 @@ class banner extends Model
         return $this->hasMany(banner::class);
     }
 }
-?>
