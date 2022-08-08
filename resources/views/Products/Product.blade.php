@@ -6,6 +6,7 @@
       <div class="card">
         <div class="card-header">
           <h4 class="card-title">Product Table</h4>
+          <a href="{{asset('/Products/create')}}" class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span> Add</a>
         </div>
         <div class="card-body">
           <div class="table-responsive">
@@ -18,10 +19,13 @@
                   Title
                 </th>
                 <th>
-                  Img
+                  Price
                 </th>
                 <th>
-                  Price
+                  Description
+                </th>
+                <th>
+                  Image
                 </th>
                 <th>
                   Category
@@ -31,20 +35,26 @@
                 </th>
               </thead>
               <tbody>
-                @foreach ($products as $product)
-                        <tr>
-                          <th scope="row">{{ $product->id }}</th>
-                          <td>{{ $product->title }}</td>
-                          <td>link img</td>
-                          <td>{{ $product->price }}</td>
-                          <td>{{ $product->Category->name}}</td>
-                          <td class="text-right">
-                            {{-- <a href="{{asset('/create')}}" class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span> Add</a>
-                            <a href="{{asset('editCategory/'.$value->id)}}" class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span> Edit</a>
-                            <a href="{{asset('/category/delete/'.$value->id)}}" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span>Delete</a> --}}
-                          </td>
-                        </tr>
-                        @endforeach
+                @foreach($products as $key => $products)
+                  <tr>
+                    <td>{{$key+1}}</td>
+                    <td>{{ $products->title }}</td>
+                    <td>{{ $products->price }}<a>$</a></td>
+                    <td>{{ $products->description }}</td>
+                    <td><img src="{{ asset('images/products/'.$products->image) }}" alt="" border=3 height=150 width=200></td>
+                    <td>{{ $products->Category->name }}</td>
+            <td class="text-right">
+                  <form action="{{ route('Products.destroy',$products->id) }}" method="POST">
+   
+                    <a class="btn btn-info" href="{{ route('Products.showProduct',$products->id) }}">Show</a>
+    
+                    <a class="btn btn-primary" href="{{ route('Products.editProduct',$products->id) }}">Edit</a>
+   
+                    <a class="btn btn-primary" href="{{ route('Products.destroy',$products->id) }}">Delete</a>
+                </form>
+            </td>
+            </tr>
+              @endforeach
               </tbody>
             </table>
           </div>
