@@ -21,7 +21,7 @@
   </div>
 @endif --}}
  
-{{-- <form action="{{ route('/Products/store') }}" method="POST" enctype="multipart/form-data"> --}}
+<form action="{{ route('/Products/store') }}" method="POST" enctype="multipart/form-data">
   @csrf
 
    <div class="row">
@@ -62,8 +62,9 @@
               <button type="submit" class="btn btn-primary">Submit</button>
       </div>
   </div>
-</div>
-</div>
-</div>
 </form>
+</div>
+</div>
+</div>
+
 @endsection

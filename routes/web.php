@@ -23,6 +23,10 @@ Auth::routes();
 Route::get('/index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 // Route::get('/admin', [App\Http\Controllers\HomeController::class, 'home'])->name('index');
 
+//Home
+
+Route::get('/destroy/{id}', [App\Http\Controllers\ProductController::class,'destroy'])->name('destroy');
+Route::get('/detail/{id}', [App\Http\Controllers\ProductController::class,'show'])->name('detail');
 //Category
 // Route::group(['prefix' =>'Category'],function () {
 Route::get('/category', [App\Http\Controllers\CategoryController::class,'index'])->name('Categories/Category');
@@ -57,3 +61,7 @@ Route::get('/userList', [App\Http\Controllers\UserController::class,'index'])->n
 Route::get('/editUser/{id}', [App\Http\Controllers\UserController::class,'getEditUser'])->name('Admin/editUser');
 Route::post('/editUser/{id}', [App\Http\Controllers\UserController::class,'postEditUser'])->name('Admin/updateUser');
 Route::get('/user/delete/{id}',[App\Http\Controllers\UserController::class,'delete'])->name('Category/delete');;
+
+
+//Detail
+Route::get('/detail/{id}', [App\Http\Controllers\DetailController::class,'show'])->name('detai');

@@ -260,17 +260,19 @@
                         <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
                         <a href="images/preview/hp-2.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
                     </article>
+                    
                 </li>
                 <li style="border: solid lightgray 1px;">
-                    <img src="images/products/quan2.jpg" alt="" />
-                    <span>CoolActive Box<br><small>339.000 VNĐ</small></span>
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h3>CoolActive Box - Vận động luôn thoải mái</h3>
-                        <p>
-                        <a href="ctsan-pham-hpelite.html" class="link tip" title="Detail"></a>&nbsp;
-                        <a href="#" class="cart tip" title="Add to Cart"></a>&nbsp;&nbsp;
-                        <a href="images/preview/hp-3.png" rel="prettyPhoto[gallery1]" class="zoom tip" title="Zoom In" ></a></p>
-                    </article>
+                        @foreach($product as $key => $value)
+                        <tr>
+                        <td>{{ $value->title }}</td>
+                        <td>{{ $value->price }}<a>$</a></td>
+                        {{-- <td><img src="{{ asset('images/products/'.$value->image) }}" alt="" border=3 height=150 width=200></td>
+                        <td> --}}
+                        <a class="btn btn-info" href="{{ route('detail/',$value->id) }}">Show</a> 
+                        </td>
+                </tr>
+                    @endforeach 
                 </li>
                 <li style="border: solid lightgray 1px;">
                     <img src="images/products/quan3.jpg" alt="" />
