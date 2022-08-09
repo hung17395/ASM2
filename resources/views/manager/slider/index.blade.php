@@ -16,7 +16,7 @@
                   <thead>
                      
                        <tr>
-                          <th>ID</th>
+                          <th>ID:</th>
                           <th>Title</th>
                           <th>Description</th>
                           <th>Image</th>
