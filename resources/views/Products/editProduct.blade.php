@@ -58,7 +58,7 @@
                         <strong>Category:</strong>
                         <select name="category" class="form-control">
                             @foreach($category as $category)
-                            <option value="{{$category->id}}">{{$category->name}}</option>
+                            <option value="{{$category->category_id}}">{{$category->name}}</option>
                             @endforeach
                           </select>
                     </div>

@@ -20,21 +20,21 @@ class CategoryController extends Controller
     {
 
         $categories = new Category();
-        $categories->name = $request->name;
+        $categories->category_name = $request->category_name;
         $categories->save();
       
        return redirect()->route('Categories/Category');;
 
     }
-    public function getEditCate($id)
+    public function getEditCate($category_id)
     {
-       $data['cate'] = Category::find($id);
+       $data['cate'] = Category::find($category_id);
        return view('Categories/editCategory',$data);
     }
-    public function postEditCate(Request $request,$id)
+    public function postEditCate(Request $request,$category_id)
     {
-        $categories = Category::find($id);  
-        $categories->name = $request->name;
+        $categories = Category::find($category_id);  
+        $categories->category_name = $request->category_name;
         $categories->save();
         return redirect()->route('Categories/Category');
     }

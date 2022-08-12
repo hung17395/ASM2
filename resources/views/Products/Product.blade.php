@@ -41,8 +41,8 @@
                     <td>{{ $products->title }}</td>
                     <td>{{ $products->price }}<a>$</a></td>
                     <td>{{ $products->description }}</td>
-                    <td><img src="{{ asset('images/products/'.$products->image) }}" alt="" border=3 height=150 width=200></td>
-                    <td>{{ $products->Category->name }}</td>
+                    <td><img src="{{ asset('image/'.$products->image) }}" alt="" border=3 height=150 width=200></td>
+                    <td>{{ $products->categors->category_name }}</td>
             <td class="text-right">
                   <form action="{{ route('Products.destroy',$products->id) }}" method="POST">
    
@@ -63,6 +63,4 @@
     </div>
   </div>
 </div>
-                    <p>Product </p>
-                    <button class="btn btn-info float-right md-4" ><a href="{{ url('/create-product') }}">Add Product</a></button>                
 @endsection

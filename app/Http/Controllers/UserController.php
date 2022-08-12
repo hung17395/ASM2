@@ -40,8 +40,8 @@ class UserController extends Controller
 
  public function delete($id)
     {
-        $user = User::find($id);
-        $user->delete();
+        $users = User::find($id);
+        $users->delete();
         return back();
     }
 }

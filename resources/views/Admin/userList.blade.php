@@ -10,7 +10,7 @@
         </div>
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table">
+            <table class="table" id="dataTable">
               <thead class=" text-primary">
                 <th>
                   #
@@ -35,7 +35,7 @@
                       <td>{{ $value->email}}</td>
                       <td class="text-right">
                           <a href="{{asset('editUser/'.$value->id)}}" class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span> Edit</a>
-                          <a href="{{asset('listuser/delete/'.$value->id)}}" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span>Delete</a>
+                          <a href="{{asset('delete/'.$value->id)}}" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span>Delete</a>
                         </td>
                     </tr>
                     @endforeach
