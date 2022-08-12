@@ -11,7 +11,7 @@ use App\Models\Category;
 class ProductController extends Controller
 {
     public function index(){
-        // $arr['products'] = Product::with('Category')->get();
+        // $arr['product'] = Product::with('Category')->get();
         // return view ('Products/Product')->with($arr);
         $products = Product::all();
         return view('Products/Product', compact("products"));
@@ -51,7 +51,7 @@ class ProductController extends Controller
             $newProduct->image = $fileName;
             $newProduct->category_id = $request->category;
             $newProduct->save();
-            return redirect()->route('/Products/store')
+            return redirect()->route('/Products/Product')
                 ->with('success', 'Product created successfully.');
         }
     }
@@ -100,12 +100,12 @@ class ProductController extends Controller
                 }
                 $product->category_id = $request->category;
                 $product->save();
-                return redirect()->route('Products/Product')
+                return redirect()->route('/Products/Product')
                 ->with('success', 'Product updated successfully');
             } 
             else
             {
-                return redirect()->route('Products/Product')
+                return redirect()->route('/Products/Product')
                 ->with('Error', 'Product not update');
             }         
         }       
@@ -113,12 +113,12 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product = Product::find($id);
-        $image_path = "/image/product/.$product->image";  // Value is not URL but directory file path
+        $image_path = "/images/products/.$product->image";  // Value is not URL but directory file path
         if(File::exists($image_path)) {
             File::delete($image_path);
         }
         $product->delete();
-        return redirect()->route('Products/Product')
+        return redirect()->route('/Products/Product')
             ->with('success', 'Product deleted successfully');
     }
 

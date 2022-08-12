@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Usercontroller;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,13 +39,13 @@ Route::post('/editCategory/{id}', [App\Http\Controllers\CategoryController::clas
 Route::get('/category/delete/{id}',[App\Http\Controllers\CategoryController::class,'delete'])->name('Category/delete');;
 // });
 //Product
-Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
-Route::get('/Products/create', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/create');
-Route::get('/Products/edit/{id}', [App\Http\Controllers\ProductController::class,'edit'])->name('Products.editProduct');
-Route::post('/Products/update/{id}', [App\Http\Controllers\ProductController::class,'update'])->name('Products.updateProduct');
-Route::get('/Products/showProduct/{id}', [App\Http\Controllers\ProductController::class,'show'])->name('Products.showProduct');
-Route::post('/Products/store', [App\Http\Controllers\ProductController::class,'store'])->name('/Products/store');
-Route::get('/Products/delete/{id}', [App\Http\Controllers\ProductController::class,'destroy'])->name('Products.destroy');
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('/Products/Product');
+Route::get('/product/create', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
+Route::get('/product/edit/{id}', [App\Http\Controllers\ProductController::class,'edit'])->name('Products.editProduct');
+Route::post('/product/update/{id}', [App\Http\Controllers\ProductController::class,'update'])->name('products.update');
+Route::get('/product/show/{id}', [App\Http\Controllers\ProductController::class,'show'])->name('Products.showProduct');
+Route::post('/product/store', [App\Http\Controllers\ProductController::class,'store'])->name('/product/store');
+Route::get('/product/delete/{id}', [App\Http\Controllers\ProductController::class,'destroy'])->name('Products.destroy');
 //FE
 Route::get('/lienhe', [App\Http\Controllers\FEController::class, 'index'])->name('lienhe');
 

@@ -9,7 +9,7 @@ use App\Models\Category;
 
 class Category extends Model
 {
-    public $table ="categories";
+    public $table ="category";
     public $primaryKey = 'category_id';
     public $fillable = ['category_name'];
     public $timestamps = false;

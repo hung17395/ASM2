@@ -8,8 +8,8 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        $categories=Category::all();
-        return view('Categories/category', compact("categories"));
+        $category=Category::all();
+        return view('Categories/category', compact("category"));
     }
     public function getCreate()
     {
@@ -19,9 +19,9 @@ class CategoryController extends Controller
     public function postCreate(Request $request)
     {
 
-        $categories = new Category();
-        $categories->category_name = $request->category_name;
-        $categories->save();
+        $category = new Category();
+        $category->category_name = $request->category_name;
+        $category->save();
       
        return redirect()->route('Categories/Category');;
 
@@ -33,15 +33,15 @@ class CategoryController extends Controller
     }
     public function postEditCate(Request $request,$category_id)
     {
-        $categories = Category::find($category_id);  
-        $categories->category_name = $request->category_name;
-        $categories->save();
+        $category = Category::find($category_id);  
+        $category->category_name = $request->category_name;
+        $category->save();
         return redirect()->route('Categories/Category');
     }
     public function delete($id)
     {
-        $categories = Category::find($id);
-        $categories->delete();
+        $category = Category::find($id);
+        $category->delete();
         return back();
         // return redirect()->route('/Categories/Category')
         // ->with('success', 'Category deleted successfully');

@@ -24,7 +24,7 @@
               </thead>
               <tbody>
  
-                @foreach ($categories as $key => $value)
+                @foreach ($category as $key => $value)
                 <tr>            
                     <td>{{ $key+1 }}</td>
                     <td>{{ $value->category_name }}</td>
