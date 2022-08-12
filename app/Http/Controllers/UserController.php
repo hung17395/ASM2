@@ -18,6 +18,11 @@ class UserController extends Controller
         return view('Admin/userList',compact("users"));
     }
 
+    public function getUser()
+    {
+        return view('Admin/createUser');
+    }
+
     public function getEditUser($id){
         $data['users'] = User::find($id);
        return view('Admin/editUser',$data);
@@ -31,7 +36,7 @@ class UserController extends Controller
 
         $users = User::find($id); 
         $users->name = $request->name; 
-
+        $users->email = $request->email; 
         $users->save(); 
 
     return redirect()->route('Admin/userList'); 

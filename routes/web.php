@@ -63,4 +63,5 @@ Route::get('/Products/delete/{id}', [App\Http\Controllers\ProductController::cla
 Route::get('/userList', [App\Http\Controllers\UserController::class,'index'])->name('Admin/userList');
 Route::get('/editUser/{id}', [App\Http\Controllers\UserController::class,'getEditUser'])->name('Admin/editUser');
 Route::post('/editUser/{id}', [App\Http\Controllers\UserController::class,'postEditUser'])->name('Admin/updateUser');
-Route::get('/user/delete/{id}',[App\Http\Controllers\UserController::class,'delete'])->name('Category/delete');;
+Route::get('/user/delete/{id}',[App\Http\Controllers\UserController::class,'delete'])->name('Admin/delete');;
+Route::get('/user/create', [App\Http\Controllers\UserController::class,'getUser'])->name('Admin/createUser');
