@@ -18,6 +18,23 @@ class UserController extends Controller
         return view('Admin/userList',compact("users"));
     }
 
+    public function getUser()
+    {
+        return view('Admin/createUser');
+    }
+    // //Hàm store để thêm dữ liệu
+    // public function postUser(Request $request)
+    // {
+
+    //     $users = new Category();
+    //     $users->name = $request->name;
+    //     $users->email = $request->email;
+    //     $users->save();
+      
+    //    return redirect()->route('Admin/userList');;
+
+    // }
+
     public function getEditUser($id){
         $data['users'] = User::find($id);
        return view('Admin/editUser',$data);
