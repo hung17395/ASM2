@@ -63,6 +63,5 @@
     </div>
   </div>
 </div>
-                    <p>Product </p>
-                    <button class="btn btn-info float-right md-4" ><a href="{{ url('/create-product') }}">Add Product</a></button>                
+                   
 @endsection
