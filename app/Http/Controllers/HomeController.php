@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\Detail;
 
 class HomeController extends Controller
 {
@@ -24,6 +29,8 @@ class HomeController extends Controller
     public function index()
     {
         return view('index');
+        // $arr['products'] = Product::with('Category')->get();
+        // return view ('Products/Product')->with($arr);   
     }
 
     public function lienhe()
@@ -31,5 +38,14 @@ class HomeController extends Controller
         return view('lienhe');
     }
 
-    
+    public function home()
+    {
+        return view('index');
+    }
+
+    public function show($id)
+    {
+        $product = Product::find($id);
+        return view('detail', ['product' => $product]);
+    }
 }

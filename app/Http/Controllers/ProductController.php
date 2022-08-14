@@ -11,13 +11,24 @@ use App\Models\Category;
 class ProductController extends Controller
 {
     public function index(){
+<<<<<<< HEAD
         $arr['products'] = Product::with('Category')->get();
         return view ('Products/Product')->with($arr);     
+=======
+        // $arr['product'] = Product::with('Category')->get();
+        // return view ('Products/Product')->with($arr);
+        $products = Product::all();
+        return view('Products/Product', compact("products"));
+>>>>>>> 2f58b2851c556e39b7f119904f5b370085fb5203
     }
     public function create()
     {
         $category = Category::all();
+<<<<<<< HEAD
         return view('Products/create',['category' => $category]);
+=======
+        return view('Products/Create',['category' => $category]);
+>>>>>>> 2f58b2851c556e39b7f119904f5b370085fb5203
     }
     public function store(Request $request)
     {
@@ -98,12 +109,20 @@ class ProductController extends Controller
                 }
                 $product->category_id = $request->category;
                 $product->save();
+<<<<<<< HEAD
                 return redirect()->route('products.index')
+=======
+                return redirect()->route('/Products/Product')
+>>>>>>> 2f58b2851c556e39b7f119904f5b370085fb5203
                 ->with('success', 'Product updated successfully');
             } 
             else
             {
+<<<<<<< HEAD
                 return redirect()->route('products.index')
+=======
+                return redirect()->route('/Products/Product')
+>>>>>>> 2f58b2851c556e39b7f119904f5b370085fb5203
                 ->with('Error', 'Product not update');
             }         
         }       
@@ -111,12 +130,20 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product = Product::find($id);
+<<<<<<< HEAD
         $image_path = "/image/product/.$product->image";  // Value is not URL but directory file path
+=======
+        $image_path = "/images/products/.$product->image";  // Value is not URL but directory file path
+>>>>>>> 2f58b2851c556e39b7f119904f5b370085fb5203
         if(File::exists($image_path)) {
             File::delete($image_path);
         }
         $product->delete();
+<<<<<<< HEAD
         return redirect()->route('products.index')
+=======
+        return redirect()->route('/Products/Product')
+>>>>>>> 2f58b2851c556e39b7f119904f5b370085fb5203
             ->with('success', 'Product deleted successfully');
     }
 
