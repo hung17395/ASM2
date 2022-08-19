@@ -53,7 +53,6 @@ Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admin'])->na
     Route::get('/category/delete/{id}',[App\Http\Controllers\CategoryController::class,'delete'])->name('Category/delete');;
 
 //Product
-<<<<<<< HEAD
 Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('/Products/Product');
 Route::get('/product/create', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
 Route::get('/product/edit/{id}', [App\Http\Controllers\ProductController::class,'edit'])->name('Products.editProduct');
@@ -70,19 +69,4 @@ Route::get('/user/create', [App\Http\Controllers\UserController::class,'getUser'
 
 //Detail
 Route::get('/detail/{id}', [App\Http\Controllers\DetailController::class,'show'])->name('detai');
-=======
-Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('Products/Product');
-Route::get('/Products/create', [App\Http\Controllers\ProductController::class, 'create'])->name('Products/Create');
-Route::get('/Products/edit/{id}', [App\Http\Controllers\ProductController::class,'edit'])->name('Products.editProduct');
-Route::post('/Products/update/{id}', [App\Http\Controllers\ProductController::class,'update'])->name('Products.updateProduct');
-Route::get('/Products/showProduct/{id}', [App\Http\Controllers\ProductController::class,'show'])->name('Products.showProduct');
-Route::post('/Products/store', [App\Http\Controllers\ProductController::class,'store'])->name('/Products/Product');
-Route::get('/Products/delete/{id}', [App\Http\Controllers\ProductController::class,'destroy'])->name('Products.destroy');
 
-// User
-Route::get('/userList', [App\Http\Controllers\UserController::class,'index'])->name('Admin/userList');
-Route::get('/editUser/{id}', [App\Http\Controllers\UserController::class,'getEditUser'])->name('Admin/editUser');
-Route::post('/editUser/{id}', [App\Http\Controllers\UserController::class,'postEditUser'])->name('Admin/updateUser');
-Route::get('/user/delete/{id}',[App\Http\Controllers\UserController::class,'delete'])->name('Admin/delete');;
-Route::get('/user/create', [App\Http\Controllers\UserController::class,'getUser'])->name('Admin/createUser');
->>>>>>> f18dffac5047036861e949cc9b7128d7b4b0b7ab

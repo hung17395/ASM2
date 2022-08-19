@@ -22,7 +22,7 @@ class UserController extends Controller
     {
         return view('Admin/createUser');
     }
-<<<<<<< HEAD
+
     // //Hàm store để thêm dữ liệu
     // public function postUser(Request $request)
     // {
@@ -35,8 +35,6 @@ class UserController extends Controller
     //    return redirect()->route('Admin/userList');;
 
     // }
-=======
->>>>>>> f18dffac5047036861e949cc9b7128d7b4b0b7ab
 
     public function getEditUser($id){
         $data['users'] = User::find($id);
@@ -51,11 +49,8 @@ class UserController extends Controller
 
         $users = User::find($id); 
         $users->name = $request->name; 
-<<<<<<< HEAD
 
-=======
         $users->email = $request->email; 
->>>>>>> f18dffac5047036861e949cc9b7128d7b4b0b7ab
         $users->save(); 
 
     return redirect()->route('Admin/userList'); 
@@ -68,8 +63,7 @@ class UserController extends Controller
         $users->delete();
         return back();
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> f18dffac5047036861e949cc9b7128d7b4b0b7ab
+
+
